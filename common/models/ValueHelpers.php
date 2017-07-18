@@ -29,7 +29,8 @@ class ValueHelpers {
         //bind query parameters for safety
         $command->bindValue(':role_name',$role_name);
         //retrieve result
-        return $command->queryOne()['role_value'];
+        $result = $command->queryOne();
+        return $result['role_value'];
         
     }
     /*
@@ -47,7 +48,8 @@ class ValueHelpers {
         //bind query parameters for safety
         $command->bindValue(':status_name',$status_name);
         //retrieve result and return
-        return $command->queryOne()['status_value'];
+        $result = $command->queryOne();
+        return $result['status_value'];
     }
     /*
      * return the value of user type handed in as a string
@@ -64,6 +66,7 @@ class ValueHelpers {
         //bind query parameters for safety
         $command->bindValue(':user_type_name', $user_type_name);
         //return result of query
-        return $command->queryOne()['user_type_value'];
+        $result = $command->queryOne();
+        return $result['user_type_value'];
     }
 }

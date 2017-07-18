@@ -8,6 +8,7 @@ use yii\helpers\ArrayHelper;
 use yii\db\Expression;
 use yii\helpers\Html;
 use yii\helpers\Url;
+use yii\db\ActiveRecord;
 /**
  * This is the model class for table "profile".
  *
