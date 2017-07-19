@@ -2,7 +2,7 @@
 
 namespace backend\models;
 
-use Yii;
+use yii\db\ActiveRecord;
 use common\models\User;
 
 
@@ -13,7 +13,7 @@ use common\models\User;
  * @property string $status_name
  * @property int $status_value
  */
-class Status extends \yii\db\ActiveRecord
+class Status extends ActiveRecord
 {
     /**
      * @inheritdoc

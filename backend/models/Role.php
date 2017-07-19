@@ -2,7 +2,7 @@
 
 namespace backend\models;
 
-use Yii;
+use yii\db\ActiveRecord;
 use common\models\User;
 
 /**
@@ -12,7 +12,7 @@ use common\models\User;
  * @property string $role_name
  * @property int $role_value
  */
-class Role extends \yii\db\ActiveRecord
+class Role extends ActiveRecord
 {
     /**
      * @inheritdoc

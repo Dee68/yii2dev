@@ -2,7 +2,7 @@
 
 namespace frontend\models;
 
-use Yii;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "gender".
@@ -10,7 +10,7 @@ use Yii;
  * @property int $id
  * @property string $gender_name
  */
-class Gender extends \yii\db\ActiveRecord
+class Gender extends ActiveRecord
 {
     /**
      * @inheritdoc

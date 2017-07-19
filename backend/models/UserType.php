@@ -2,23 +2,23 @@
 
 namespace backend\models;
 
-use Yii;
+use yii\db\ActiveRecord;
 use common\models\User;
 /**
- * This is the model class for table "usertype".
+ * This is the model class for table "user_type".
  *
  * @property int $id
  * @property string $user_type_name
  * @property int $user_type_value
  */
-class UserType extends \yii\db\ActiveRecord
+class UserType extends ActiveRecord
 {
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return 'usertype';
+        return 'user_type';
     }
 
     /**

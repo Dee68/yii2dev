@@ -2,7 +2,7 @@
 
 namespace frontend\models;
 
-use Yii;
+use yii\db\ActiveRecord;
 use common\models\User;
 use yii\helpers\ArrayHelper;
 use yii\db\Expression;
@@ -21,7 +21,7 @@ use yii\db\ActiveRecord;
  * @property string $created_at
  * @property string $updated_at
  */
-class Profile extends \yii\db\ActiveRecord
+class Profile extends ActiveRecord
 {
     /**
      * @inheritdoc
